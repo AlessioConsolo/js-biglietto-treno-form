@@ -3,7 +3,8 @@ btn.addEventListener("click", function () {
   let name = document.getElementById("nome").value;
   let km = document.getElementById("km-da-percorrere").value;
   let eta = document.getElementById("eta").value;
-  let cpcode = Math.floor(Math.random() * 10 + 1);
+  let cpcode = Math.floor(Math.random() * 90000 + 1);
+  let carrozza = Math.floor(Math.random() * 10 + 1);
 
   let price = 0.21 * km;
   let perc_discount = 0;
@@ -24,6 +25,7 @@ btn.addEventListener("click", function () {
   }
 
   document.getElementById("codice-cp").innerText = cpcode;
+  document.getElementById("carrozza").innerText = carrozza;
   document.getElementById("nome-passeggero").innerText = name;
   document.getElementById("price").innerText = final_price.toFixed(2);
   console.log(final_price.toFixed(2));
