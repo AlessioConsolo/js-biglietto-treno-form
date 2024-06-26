@@ -22,4 +22,5 @@ btn.addEventListener("click", function () {
 
   document.getElementById("nome-passeggero").append(`${name}`);
   document.getElementById("price").innerText = final_price.toFixed(2);
+  console.log(final_price.toFixed(2));
 });
