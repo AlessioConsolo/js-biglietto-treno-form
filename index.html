@@ -45,10 +45,8 @@
                 </div>
               </div>
               <div class="col-12 pb-3">
-                <label class="col-form-label" for="inlineFormSelectPref"
-                  >Fascia d'età</label
-                >
-                <select class="form-select" id="inlineFormSelectPref">
+                <label class="col-form-label" for="eta">Fascia d'età</label>
+                <select class="form-select" id="eta">
                   <option selected>Scegli...</option>
                   <option value="1">Minorenne</option>
                   <option value="2">Maggiorenne</option>
@@ -83,7 +81,7 @@
           <div class="passenger-details ps-3 pe-3 pb-3 d-flex">
             <div class="col-4 bg-gray p-3">
               <h4>NOME PASSEGGERO</h4>
-              <h5>Pippo</h5>
+              <h5 id="nome-passeggero"></h5>
             </div>
             <div class="col-8 top-bottom-borders justify-content-around d-flex">
               <div class="offerta">
@@ -100,7 +98,7 @@
               </div>
               <div class="costo-biglietto">
                 <h5 class="my-3 pb-5">Costo biglietto</h5>
-                <p></p>
+                <p id="price"></p>
               </div>
             </div>
           </div>
