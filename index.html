@@ -13,7 +13,9 @@
     <title>Biglietto Treno</title>
   </head>
   <body>
-    <div class="container-fluid vh-100 bg-red">
+    <div
+      class="container-fluid vh-100 bg-red d-flex flex-column justify-content-evenly"
+    >
       <div class="container">
         <h2 class="text-center text-white p-3">
           CALCOLA IL PREZZO DEL TUO BIGLIETTO
@@ -25,31 +27,27 @@
               id="train-ticket-form"
             >
               <div class="col-12 pb-3">
-                <label class="col-form-label" for="inlineFormInputGroupUsername"
-                  >Nome e Cognome</label
-                >
+                <label class="col-form-label" for="nome">Nome e Cognome</label>
                 <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inlineFormInputGroupUsername"
-                  />
+                  <input type="text" class="form-control" id="nome" />
                 </div>
               </div>
               <div class="col-12 pb-3">
-                <label class="col-form-label" for="inlineFormInputGroupUsername"
+                <label class="col-form-label" for="km-da-percorrere"
                   >Km da percorrere</label
                 >
                 <div class="input-group">
                   <input
                     type="text"
                     class="form-control"
-                    id="inlineFormInputGroupUsername"
+                    id="km-da-percorrere"
                   />
                 </div>
               </div>
-              <div class="col-12">
-                <label class="" for="inlineFormSelectPref">Fascia d'età</label>
+              <div class="col-12 pb-3">
+                <label class="col-form-label" for="inlineFormSelectPref"
+                  >Fascia d'età</label
+                >
                 <select class="form-select" id="inlineFormSelectPref">
                   <option selected>Scegli...</option>
                   <option value="1">Minorenne</option>
@@ -63,6 +61,7 @@
                 type="submit"
                 form="train-ticket-form"
                 class="btn btn-danger"
+                id="price-button"
               >
                 Genera
               </button>
@@ -79,7 +78,7 @@
       </div>
       <div class="container">
         <h2 class="text-center text-white p-3">IL TUO BIGLIETTO</h2>
-        <div class="row bg-golden">
+        <div class="row bg-golden border-r-5">
           <h4 class="ps-3 pt-3">DETTAGLI PASSEGGERI</h4>
           <div class="passenger-details ps-3 pe-3 pb-3 d-flex">
             <div class="col-4 bg-gray p-3">
