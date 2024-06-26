@@ -12,6 +12,15 @@
   background-color: goldenrod;
 }
 
+.bg-gray {
+  background-color: gray;
+}
+
 .border-r-15 {
   border-radius: 15px;
+}
+
+.top-bottom-borders {
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
 }
