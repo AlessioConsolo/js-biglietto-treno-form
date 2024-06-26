@@ -1,6 +1,6 @@
 const btn = document.getElementById("price-button");
 btn.addEventListener("click", function () {
-  let name = document.getElementById("name").value;
+  let name = document.getElementById("nome").value;
   let km = document.getElementById("km-da-percorrere").value;
   let eta = document.getElementById("eta").value;
 
@@ -11,6 +11,8 @@ btn.addEventListener("click", function () {
   if (eta == 1) {
     perc_discount = 20;
   } else if (eta == 2) {
+    perc_discount = 0;
+  } else if (eta == 3) {
     perc_discount = 40;
   }
 
@@ -20,7 +22,7 @@ btn.addEventListener("click", function () {
     final_price = price;
   }
 
-  document.getElementById("nome-passeggero").append(`${name}`);
+  document.getElementById("nome-passeggero").innerText = name;
   document.getElementById("price").innerText = final_price.toFixed(2);
   console.log(final_price.toFixed(2));
 });
